@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+  <title>登录</title>
+  <style media="screen">
+    body {
+
+      background-image: linear-gradient(#79a06d, #79a06d);
+    }
+
+    #box {
+      border: 1px solid rgb(200, 200, 200);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+      background: rgba(200, 200, 200, 0.1);
+      border-radius: 4px;
+      top: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-offset-4 col-md-4" id="box">
+        <h2>Login</h2>
+        <hr>
+        <form class="form-horizontal" action="/login" method="post" id="contact_form">
+          <fieldset>
+            <div class="form-group">
+              <div class="col-md-12">
+                <div class="input-group">
+                  <span class="input-group-addon"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></span>
+                  <input name="name" placeholder="Phone number" class="form-control" type="text" pattern="[0-9]{11}">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+
+              <div class="col-md-12">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                  <input name="password" placeholder="Password" class="form-control" type="password">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12">
+                                  <a href="/find">忘记密码</a>
+                <button type="submit" class="btn btn-md btn-danger pull-right">登录 </button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
